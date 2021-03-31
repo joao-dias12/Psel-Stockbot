@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut" href="favicon.ico" type="image/x-icon">
+    
+
+<head>
+    <title> {% block title%} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+
+<body>
+    <header>
+        <h1> Mural de Mensagens StockBot <h1>
+    </header>
+
+    <main>
+        {%block content%}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; StockBot</p>
+    </footer>
+</body>
+
+</html>
